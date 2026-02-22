@@ -3,8 +3,7 @@
 
 ### [Project Page]() | [Arxiv]() | [Supplementary]()
 
-> [PhysSkin: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning](https://github.com/zju3dv/PhysSkin),
-
+> [PhysSkin: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning](https://github.com/zju3dv/PhysSkin), \
 > Yuanhang Lei, Tao Cheng, Xingxuan Li, Boming Zhao, Siyuan Huang, Ruizhen Hu, Peter Yichen Chen, Hujun Bao, Zhaopeng Cui†
 
 ![teaser](https://raw.githubusercontent.com/huahuo359/open_access_assets/main/PhysSkin-CVPR2026/PhysSkin_teaser.png)
