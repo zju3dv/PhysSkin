@@ -18,7 +18,7 @@ PhysSkin shows outstanding performance on generalizable neural skinning and enab
 
 ## ToDos
 🔥 Feel free to raise any requests~
-- [ ] Release project page.
+- [x] Release project page.
 - [ ] Release paper.
 - [ ] Release codes.
 
