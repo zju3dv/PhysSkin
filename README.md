@@ -1,4 +1,4 @@
-# [CVPR 2026] PhysSkin: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning
+# [CVPR 2026 Highlight] PhysSkin: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning
 
 
 ### [Project Page](https://zju3dv.github.io/PhysSkin/) | [Arxiv](https://arxiv.org/abs/2603.23194) | [Supplementary]()
