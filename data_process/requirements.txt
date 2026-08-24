@@ -1,0 +1,12 @@
+numpy==1.26.4
+scipy
+torch
+trimesh
+omegaconf
+open3d
+fpsample
+pysdf
+pybind11==2.13.6
+git+https://github.com/lzhnb/CuMCubes
+git+https://github.com/ashawkey/cubvh
+git+https://github.com/ashawkey/raytracing

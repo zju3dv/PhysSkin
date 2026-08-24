@@ -1,0 +1,8 @@
+numpy==1.26.4
+pytorch-lightning==1.6.4
+torchmetrics==1.8.1
+tensorboard==2.20.0
+protobuf==3.20.1
+conflictfree==0.1.8
+ipywidgets==8.1.7
+k3d==2.17.0

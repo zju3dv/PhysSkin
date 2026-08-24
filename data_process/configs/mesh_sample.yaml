@@ -1,0 +1,14 @@
+input:
+  mesh_path: "path/to/your/mesh.obj"
+
+sampling:
+  use_sharp_sample: true
+  use_coarse_sample: true
+  point_number: 200000
+  angle_threshold: 15.0
+
+output:
+  save_dir: "path/to/save"
+  num_split: 1
+
+debug: false

@@ -1,0 +1,15 @@
+input:
+  mesh_path: "path/to/your/mesh.obj"
+  mesh_id: "watertight_mesh"
+
+processing:
+  resolution: 512
+  num_camera: 100
+  threshold: 10
+  use_strict: false
+  use_dmc: false
+  scale: 1.0
+  points_per_batch: 45000000
+
+output:
+  save_dir: "path/to/save" 
