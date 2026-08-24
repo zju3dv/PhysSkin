@@ -42,8 +42,8 @@ The loader rescales the points to approximately `[-1, 1]`. Data splits are provi
 
 ## Visualization
 
-```bash
-physskin_point_shape_handle_cross_only_vis.ipynb
+```
+physskin_vis.ipynb
 ```
 
 The notebook uses `data/examples` by default. A different sample or dataset can be selected with `MODEL_ID` and `DATASET_ROOT`.
