@@ -77,3 +77,16 @@ The pretrained checkpoint is stored at `checkpoints/physskin_rignet_epoch150.pt`
 ## Acknowledgements
 
 This project builds upon [Simplicits](https://github.com/NVIDIAGameWorks/kaolin/tree/master/kaolin/physics/simplicits), [Michelangelo](https://github.com/NeuralCarver/Michelangelo), and [ConFIG](https://github.com/tum-pbs/ConFIG). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
+
+## Citation
+
+```bibtex
+@InProceedings{Lei_2026_CVPR,
+    author    = {Lei, Yuanhang and Cheng, Tao and Li, Xingxuan and Zhao, Boming and Huang, Siyuan and Hu, Ruizhen and Chen, Peter Yichen and Bao, Hujun and Cui, Zhaopeng},
+    title     = {PhysSkin: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {32357-32366}
+}
+```
