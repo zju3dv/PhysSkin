@@ -1,17 +1,78 @@
-# [CVPR 2026 Highlight] PhysSkin: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning
+<p align="center">
+  <a href="https://zju3dv.github.io/PhysSkin_plus/">
+    <img src="assets/readme/physskin-plus-logo.png" alt="PhysSkin++" width="360">
+  </a>
+</p>
 
-### [Project Page](https://zju3dv.github.io/PhysSkin/) | [Arxiv](https://arxiv.org/abs/2603.23194) | [Supplementary]()
+<h3 align="center">
+  Real-Time and Generalizable Physics-Based Animation<br>
+  via Self-Supervised Neural Skinning
+</h3>
 
-> [PhysSkin: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning](https://zju3dv.github.io/PhysSkin/),
-> Yuanhang Lei, Tao Cheng, Xingxuan Li, Boming Zhao, Siyuan Huang, Ruizhen Hu, Peter Yichen Chen, Hujun Bao, Zhaopeng Cui†
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.26067"><img src="https://img.shields.io/badge/PhysSkin%2B%2B-arXiv-B31B1B?style=flat-square" alt="PhysSkin++ paper on arXiv"></a>
+  <a href="https://arxiv.org/abs/2603.23194"><img src="https://img.shields.io/badge/PhysSkin-arXiv-B31B1B?style=flat-square" alt="PhysSkin paper on arXiv"></a>
+  <a href="https://zju3dv.github.io/PhysSkin_plus/"><img src="https://img.shields.io/badge/Project-PhysSkin%2B%2B-2878C8?style=flat-square" alt="Project page"></a>
+  <a href="https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4"><img src="https://img.shields.io/badge/Video-90s_Preview-7355D8?style=flat-square" alt="Watch the 90-second preview"></a>
+  <a href="https://huggingface.co/papers/2610.26067"><img src="https://img.shields.io/badge/Hugging_Face-Paper-FFD21E?style=flat-square" alt="Hugging Face paper page"></a>
+</p>
 
-![teaser](https://raw.githubusercontent.com/huahuo359/open_access_assets/main/PhysSkin-CVPR2026/PhysSkin_teaser.png)
+<p align="center"><b>From static 3D geometry to interactive, physics-based motion.</b></p>
 
-PhysSkin learns continuous skinning fields for real-time, physics-based animation across different shapes and discretizations. It combines a transformer-based shape encoder, a cross-attention field decoder, and physics-informed self-supervised objectives.
+<p align="center">
+  <a href="https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4">
+    <img src="assets/readme/preview.gif" alt="PhysSkin++ in action: interactive control, multi-object interaction, rig-complementary motion, and 3D Gaussian objects. Click to watch the full 90-second preview." width="960">
+  </a>
+  <br>
+  <a href="https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4"><b>▶ Watch the 90-second preview</b></a>
+  &nbsp; · &nbsp;
+  <a href="https://zju3dv.github.io/PhysSkin_plus/">Explore all demos</a>
+</p>
+
+<p align="center">
+  <a href="#papers">Papers</a> &nbsp; / &nbsp;
+  <a href="#overview">Overview</a> &nbsp; / &nbsp;
+  <a href="#method">Method</a> &nbsp; / &nbsp;
+  <a href="#installation">Installation</a> &nbsp; / &nbsp;
+  <a href="#visualization">Visualization</a> &nbsp; / &nbsp;
+  <a href="#citation">Citation</a>
+</p>
+
+## Papers
+
+**October 2026 — PhysSkin++ is now on arXiv.** Explore the [paper](https://arxiv.org/abs/2610.26067), [preview video](https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4), and [demo gallery](https://zju3dv.github.io/PhysSkin_plus/).
+
+| Work | Publication | Links |
+| :--- | :--- | :--- |
+| **PhysSkin++** | arXiv 2026 | [arXiv](https://arxiv.org/abs/2610.26067) · [Project](https://zju3dv.github.io/PhysSkin_plus/) · [Hugging Face](https://huggingface.co/papers/2610.26067) |
+| **PhysSkin** | **CVPR 2026 · Highlight** | [arXiv](https://arxiv.org/abs/2603.23194) · [Project](https://zju3dv.github.io/PhysSkin/) |
+
+**PhysSkin++ authors:** Yuanhang Lei, Baofei Liu, Xingxuan Li, Tao Cheng, Zixuan Wang, Boming Zhao, Yujun Shen, Siyuan Huang, Ruizhen Hu, Peter Yichen Chen, Hujun Bao, and Zhaopeng Cui.
+
+<details>
+<summary>PhysSkin (CVPR 2026) authors</summary>
+
+Yuanhang Lei, Tao Cheng, Xingxuan Li, Boming Zhao, Siyuan Huang, Ruizhen Hu, Peter Yichen Chen, Hujun Bao, and Zhaopeng Cui.
+
+</details>
+
+## Overview
+
+PhysSkin++ learns continuous neural skinning fields from static geometry to build compact deformation subspaces. Physics-informed self-supervision enables real-time reduced simulation across diverse shapes without per-object network training or simulation trajectories for supervision.
+
+| Interactive control | Multi-object interaction | Rig-complementary animation |
+| :--- | :--- | :--- |
+| Drive elastic motion with user input and boundary constraints. | Simulate contact between deformable objects and their surroundings. | Add complementary elastic responses to prescribed rig motion. |
+
+The framework supports animation across **meshes, point clouds, NeRFs, and 3D Gaussians**.
+
+![PhysSkin++ overview: self-supervised neural skinning across 3D representations, with interactive control, multi-object interaction, and rig-complementary animation.](assets/readme/teaser.png)
 
 ## Method
 
-![pipeline](https://raw.githubusercontent.com/huahuo359/open_access_assets/main/PhysSkin-CVPR2026/PhysSkin_pipeline.png)
+The framework combines a transformer-based shape encoder, a cross-attention field decoder, and physics-informed self-supervised objectives.
+
+![PhysSkin method pipeline](https://raw.githubusercontent.com/huahuo359/open_access_assets/main/PhysSkin-CVPR2026/PhysSkin_pipeline.png)
 
 ## Installation
 
@@ -79,6 +140,22 @@ The pretrained checkpoint is stored at `checkpoints/physskin_rignet_epoch150.pt`
 This project builds upon [Simplicits](https://github.com/NVIDIAGameWorks/kaolin/tree/master/kaolin/physics/simplicits), [Michelangelo](https://github.com/NeuralCarver/Michelangelo), and [ConFIG](https://github.com/tum-pbs/ConFIG). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
 
 ## Citation
+
+### PhysSkin++
+
+```bibtex
+@misc{lei2026physskinplus,
+    title         = {PhysSkin++: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning},
+    author        = {Yuanhang Lei and Baofei Liu and Xingxuan Li and Tao Cheng and Zixuan Wang and Boming Zhao and Yujun Shen and Siyuan Huang and Ruizhen Hu and Peter Yichen Chen and Hujun Bao and Zhaopeng Cui},
+    year          = {2026},
+    eprint        = {2610.26067},
+    archivePrefix = {arXiv},
+    primaryClass  = {cs.CV},
+    url           = {https://arxiv.org/abs/2610.26067}
+}
+```
+
+### PhysSkin (CVPR 2026)
 
 ```bibtex
 @InProceedings{Lei_2026_CVPR,
