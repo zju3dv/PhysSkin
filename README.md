@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://zju3dv.github.io/PhysSkin_plus/">
-    <img src="assets/readme/physskin-plus-logo.png" alt="PhysSkin++" width="360">
+    <img src="assets/readme/physskin-plus-logo-transparent.png" alt="PhysSkin++" width="360">
   </a>
 </p>
 
@@ -13,18 +13,18 @@
   <a href="https://arxiv.org/abs/2610.26067"><img src="https://img.shields.io/badge/PhysSkin%2B%2B-arXiv-B31B1B?style=flat-square" alt="PhysSkin++ paper on arXiv"></a>
   <a href="https://arxiv.org/abs/2603.23194"><img src="https://img.shields.io/badge/PhysSkin-arXiv-B31B1B?style=flat-square" alt="PhysSkin paper on arXiv"></a>
   <a href="https://zju3dv.github.io/PhysSkin_plus/"><img src="https://img.shields.io/badge/Project-PhysSkin%2B%2B-2878C8?style=flat-square" alt="Project page"></a>
-  <a href="https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4"><img src="https://img.shields.io/badge/Video-90s_Preview-7355D8?style=flat-square" alt="Watch the 90-second preview"></a>
+  <a href="https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910"><img src="https://img.shields.io/badge/Video-90s_Preview-7355D8?style=flat-square" alt="Watch the 90-second preview"></a>
   <a href="https://huggingface.co/papers/2610.26067"><img src="https://img.shields.io/badge/Hugging_Face-Paper-FFD21E?style=flat-square" alt="Hugging Face paper page"></a>
 </p>
 
 <p align="center"><b>From static 3D geometry to interactive, physics-based motion.</b></p>
 
 <p align="center">
-  <a href="https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4">
+  <a href="https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910">
     <img src="assets/readme/preview.gif" alt="PhysSkin++ in action: interactive control, multi-object interaction, rig-complementary motion, and 3D Gaussian objects. Click to watch the full 90-second preview." width="960">
   </a>
   <br>
-  <a href="https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4"><b>▶ Watch the 90-second preview</b></a>
+  <a href="https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910"><b>▶ Watch the 90-second preview</b></a>
   &nbsp; · &nbsp;
   <a href="https://zju3dv.github.io/PhysSkin_plus/">Explore all demos</a>
 </p>
@@ -40,7 +40,7 @@
 
 ## Papers
 
-**October 2026 — PhysSkin++ is now on arXiv.** Explore the [paper](https://arxiv.org/abs/2610.26067), [preview video](https://cdn-uploads.huggingface.co/production/uploads/6715b261187a20dc57275491/nkVb2tquq_737Jdmeji96.mp4), and [demo gallery](https://zju3dv.github.io/PhysSkin_plus/).
+**October 2026 — PhysSkin++ is now on arXiv.** Explore the [paper](https://arxiv.org/abs/2610.26067), [preview video](https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910), and [demo gallery](https://zju3dv.github.io/PhysSkin_plus/).
 
 | Work | Publication | Links |
 | :--- | :--- | :--- |
