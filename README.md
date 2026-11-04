@@ -10,12 +10,49 @@
 </h3>
 
 <p align="center">
+  <a href="https://github.com/huahuo359">Yuanhang Lei</a>,
+  <a href="https://github.com/LaBaFan">Baofei Liu</a>,
+  <a href="https://github.com/Leo11-strive">Xingxuan Li</a>,
+  <a href="https://academic.tao-cheng.cc/">Tao Cheng</a>,<br>
+  <a href="https://github.com/wzxtsl">Zixuan Wang</a>,
+  <a href="https://bomingzhao.github.io/">Boming Zhao</a>,
+  <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+  <a href="https://siyuanhuang.com/">Siyuan Huang</a>,<br>
+  <a href="https://csse.szu.edu.cn/staff/ruizhenhu/">Ruizhen Hu</a>,
+  <a href="https://peterchencyc.com/">Peter Yichen Chen</a>,
+  <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+  <a href="https://zhpcui.github.io/">Zhaopeng Cui</a><sup>†</sup><br>
+  <sub>PhysSkin++ authors · † Corresponding author</sub>
+</p>
+
+<p align="center"><b>PhysSkin++ · arXiv 2026</b> &nbsp; | &nbsp; <b>PhysSkin · CVPR 2026 Highlight</b></p>
+
+<p align="center">
   <a href="https://arxiv.org/abs/2610.26067"><img src="https://img.shields.io/badge/PhysSkin%2B%2B-arXiv-B31B1B?style=flat-square" alt="PhysSkin++ paper on arXiv"></a>
   <a href="https://arxiv.org/abs/2603.23194"><img src="https://img.shields.io/badge/PhysSkin-arXiv-B31B1B?style=flat-square" alt="PhysSkin paper on arXiv"></a>
   <a href="https://zju3dv.github.io/PhysSkin_plus/"><img src="https://img.shields.io/badge/Project-PhysSkin%2B%2B-2878C8?style=flat-square" alt="Project page"></a>
   <a href="https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910"><img src="https://img.shields.io/badge/Video-90s_Preview-7355D8?style=flat-square" alt="Watch the 90-second preview"></a>
   <a href="https://huggingface.co/papers/2610.26067"><img src="https://img.shields.io/badge/Hugging_Face-Paper-FFD21E?style=flat-square" alt="Hugging Face paper page"></a>
 </p>
+
+<p align="center">
+  <a href="#news">News</a> &nbsp; / &nbsp;
+  <a href="#papers">Papers</a> &nbsp; / &nbsp;
+  <a href="#overview">Overview</a> &nbsp; / &nbsp;
+  <a href="#method">Method</a> &nbsp; / &nbsp;
+  <a href="#installation">Installation</a> &nbsp; / &nbsp;
+  <a href="#visualization">Visualization</a> &nbsp; / &nbsp;
+  <a href="#citation">Citation</a>
+</p>
+
+<a name="news"></a>
+
+## 📰 News
+
+- **[2026-10-30]** PhysSkin is now featured in [PhysStudio](https://github.com/zju3dv/PhysStudio#physskin), our open-source world simulator for physics-based animation. 🌏
+- **[2026-10-19]** [PhysSkin++](https://arxiv.org/abs/2610.26067) is now on arXiv, extending PhysSkin with interactive control, multi-object interaction, and rig-complementary animation.
+- **[2026-08-24]** The PhysSkin code is now available!
+- **[2026-04-09]** PhysSkin has been selected as a **CVPR 2026 Highlight**! 🎉
 
 <p align="center"><b>From static 3D geometry to interactive, physics-based motion.</b></p>
 
@@ -29,25 +66,14 @@
   <a href="https://zju3dv.github.io/PhysSkin_plus/">Explore all demos</a>
 </p>
 
-<p align="center">
-  <a href="#papers">Papers</a> &nbsp; / &nbsp;
-  <a href="#overview">Overview</a> &nbsp; / &nbsp;
-  <a href="#method">Method</a> &nbsp; / &nbsp;
-  <a href="#installation">Installation</a> &nbsp; / &nbsp;
-  <a href="#visualization">Visualization</a> &nbsp; / &nbsp;
-  <a href="#citation">Citation</a>
-</p>
+<a name="papers"></a>
 
-## Papers
-
-**October 2026 — PhysSkin++ is now on arXiv.** Explore the [paper](https://arxiv.org/abs/2610.26067), [preview video](https://huggingface.co/papers/2610.26067?image-viewer=B81F15613A4EABA144DFC55E0D95B4EA498EE910), and [demo gallery](https://zju3dv.github.io/PhysSkin_plus/).
+## 📚 Papers
 
 | Work | Publication | Links |
 | :--- | :--- | :--- |
 | **PhysSkin++** | arXiv 2026 | [arXiv](https://arxiv.org/abs/2610.26067) · [Project](https://zju3dv.github.io/PhysSkin_plus/) · [Hugging Face](https://huggingface.co/papers/2610.26067) |
 | **PhysSkin** | **CVPR 2026 · Highlight** | [arXiv](https://arxiv.org/abs/2603.23194) · [Project](https://zju3dv.github.io/PhysSkin/) |
-
-**PhysSkin++ authors:** Yuanhang Lei, Baofei Liu, Xingxuan Li, Tao Cheng, Zixuan Wang, Boming Zhao, Yujun Shen, Siyuan Huang, Ruizhen Hu, Peter Yichen Chen, Hujun Bao, and Zhaopeng Cui.
 
 <details>
 <summary>PhysSkin (CVPR 2026) authors</summary>
@@ -56,25 +82,27 @@ Yuanhang Lei, Tao Cheng, Xingxuan Li, Boming Zhao, Siyuan Huang, Ruizhen Hu, Pet
 
 </details>
 
-## Overview
+<a name="overview"></a>
+
+## ✨ Overview
 
 PhysSkin++ learns continuous neural skinning fields from static geometry to build compact deformation subspaces. Physics-informed self-supervision enables real-time reduced simulation across diverse shapes without per-object network training or simulation trajectories for supervision.
-
-| Interactive control | Multi-object interaction | Rig-complementary animation |
-| :--- | :--- | :--- |
-| Drive elastic motion with user input and boundary constraints. | Simulate contact between deformable objects and their surroundings. | Add complementary elastic responses to prescribed rig motion. |
 
 The framework supports animation across **meshes, point clouds, NeRFs, and 3D Gaussians**.
 
 ![PhysSkin++ overview: self-supervised neural skinning across 3D representations, with interactive control, multi-object interaction, and rig-complementary animation.](assets/readme/teaser.png)
 
-## Method
+<a name="method"></a>
+
+## 🔬 Method
 
 The framework combines a transformer-based shape encoder, a cross-attention field decoder, and physics-informed self-supervised objectives.
 
 ![PhysSkin method pipeline](https://raw.githubusercontent.com/huahuo359/open_access_assets/main/PhysSkin-CVPR2026/PhysSkin_pipeline.png)
 
-## Installation
+<a name="installation"></a>
+
+## 🛠️ Installation
 
 The code was tested with Python 3.11, PyTorch 2.7.1, NumPy 1.26.4, PyTorch Lightning 1.6.4, and `conflictfree` 0.1.8.
 
@@ -84,7 +112,9 @@ pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
 
-## Data
+<a name="data"></a>
+
+## 🗂️ Data
 
 ```text
 <dataset_root>/
@@ -101,7 +131,9 @@ pip install -r requirements.txt
 
 The loader rescales the points to approximately `[-1, 1]`. Data splits are provided in `data/splits`, and processed examples for visualization are included in `data/examples`.
 
-## Visualization
+<a name="visualization"></a>
+
+## 🎬 Visualization
 
 ```
 physskin_vis.ipynb
@@ -109,7 +141,9 @@ physskin_vis.ipynb
 
 The notebook uses `data/examples` by default. A different sample or dataset can be selected with `MODEL_ID` and `DATASET_ROOT`.
 
-## Training
+<a name="training"></a>
+
+## 🏋️ Training
 
 ```bash
 DATASET_ROOT=/path/to/dataset \
@@ -117,7 +151,9 @@ GPU_IDS="0 1" \
 bash scripts/train_physskin.sh
 ```
 
-## Data preprocessing
+<a name="data-preprocessing"></a>
+
+## 🧹 Data preprocessing
 
 ```bash
 pip install -r data_process/requirements.txt
@@ -130,18 +166,24 @@ ENCODER_CHECKPOINT=/path/to/shape_encoder.pth \
 bash data_process/process_data.sh 00000001 0
 ```
 
-## Checkpoint
+<a name="checkpoint"></a>
+
+## 📦 Checkpoint
 
 The pretrained checkpoint is stored at `checkpoints/physskin_rignet_epoch150.pt`.
 
 
-## Acknowledgements
+<a name="acknowledgements"></a>
+
+## 🙏 Acknowledgements
 
 This project builds upon [Simplicits](https://github.com/NVIDIAGameWorks/kaolin/tree/master/kaolin/physics/simplicits), [Michelangelo](https://github.com/NeuralCarver/Michelangelo), and [ConFIG](https://github.com/tum-pbs/ConFIG). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
 
-## Citation
+<a name="citation"></a>
 
-### PhysSkin++
+## 📝 Citation
+
+### 📄 PhysSkin++
 
 ```bibtex
 @misc{lei2026physskinplus,
@@ -155,7 +197,7 @@ This project builds upon [Simplicits](https://github.com/NVIDIAGameWorks/kaolin/
 }
 ```
 
-### PhysSkin (CVPR 2026)
+### 📄 PhysSkin (CVPR 2026)
 
 ```bibtex
 @InProceedings{Lei_2026_CVPR,
